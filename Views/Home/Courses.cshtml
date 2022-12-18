@@ -1,0 +1,10 @@
+﻿@model IEnumerable<string>
+
+<div class="text-center">
+    <h1 class="display-4">Courses List</h1>
+</div>
+<ul class="list-group">
+    @foreach(string course in Model){
+        <li class="list-group-item"><a href="/Course/@course">@course</a></li>
+    }
+</ul>
